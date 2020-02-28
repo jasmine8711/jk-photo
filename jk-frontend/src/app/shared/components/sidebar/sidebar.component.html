@@ -1,18 +1,24 @@
 <div>
-  <div class="logo"><img src="../../../../assets/orgnzr.png"
+  <div class="logo">
+    <img [src]="isOpened?'../../../../assets/orgnzr.png': '../../../../assets/small-lens.png'"
       alt="logo"
       height="40"
-      width="120">
-    <mat-icon>
-      menu
-    </mat-icon>
+      [width]="isOpened?120:40">
+    <mat-icon class="toggle-btn"
+      *ngIf="isOpened"
+      (click)="toggleSidebar()">keyboard_arrow_left</mat-icon>
   </div>
   <ul class="my-ul">
+    <li *ngIf="!isOpened"
+      mat-list-item
+      (click)="toggleSidebar()">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </li>
     <li class="myBtn"
       mat-list-item
       routerLinkActive="list-item-active"
       routerLink="">
-      <mat-icon>photo_library</mat-icon>
+      <mat-icon class="dark-green">photo_library</mat-icon>
       <span class="my-span"> album</span>
 
     </li>
@@ -20,7 +26,7 @@
       mat-list-item
       routerLinkActive="list-item-active"
       routerLink="/pics">
-      <mat-icon>bookmark_border</mat-icon>
+      <mat-icon class="purple">image</mat-icon>
       <span class="my-span"> photoes</span>
 
     </li>
@@ -28,7 +34,7 @@
       mat-list-item
       routerLinkActive="list-item-active"
       routerLink="/pics">
-      <mat-icon>bookmark_border</mat-icon>
+      <mat-icon class="green">bookmark_border</mat-icon>
       <span class="my-span"> label</span>
 
     </li>
@@ -36,7 +42,7 @@
       mat-list-item
       routerLinkActive="list-item-active"
       routerLink="/pics">
-      <mat-icon> location_on</mat-icon>
+      <mat-icon class="blue"> location_on</mat-icon>
       <span class="my-span"> location</span>
 
     </li>

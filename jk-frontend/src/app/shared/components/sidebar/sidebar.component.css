@@ -14,14 +14,26 @@
   justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
-  height: 30px;
+  height: 35px;
+  margin-bottom: 10px;
 }
 .myBtn:hover {
-  background-color: rgb(159, 188, 242);
+  color: white;
+  border-radius: 5px;
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
 }
 .my-ul {
   padding-left: 20px;
 }
 .my-span {
   margin-left: 20px;
+}
+.toggle-btn {
+  cursor: pointer;
 }

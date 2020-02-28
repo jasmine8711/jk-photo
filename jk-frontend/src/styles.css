@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 html,
 body {
   height: 100%;
@@ -15,5 +15,27 @@ a {
   text-decoration: none;
 }
 .bg {
+  background-color: #f0f4f7;
+}
+.dark-green {
+  color: #2abb9c;
+}
+.green {
+  color: #38cb74;
+}
+.blue {
+  color: #2e93d8;
+}
+.purple {
+  color: #9a5bb3;
+}
+.gray {
+  color: #96a5a5;
+}
+.white-shadow {
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.18);
+}
+.light-gray {
   background-color: #f0f4f7;
 }

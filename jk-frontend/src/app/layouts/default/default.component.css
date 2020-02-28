@@ -1,14 +1,18 @@
 :host {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 mat-drawer {
-  width: 200px;
   border-right: 1px solid #efefef;
 }
+.sidebar-open {
+  width: 12vw;
+}
+.sidebar-close {
+  width: 4vw;
+}
 mat-drawer-container {
-  height: 100%;
+  height: 100vh;
 }
 
 /* background-image: linear-gradient(

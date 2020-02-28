@@ -8,6 +8,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
 import { DefaultModule } from './layouts/default/default.module';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { DefaultModule } from './layouts/default/default.module';
 
   ],
   imports: [
+
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

@@ -1,3 +1,9 @@
+:host {
+  position: fixed;
+  background: white;
+  width: 100%;
+  height: 70px;
+}
 ul li {
   list-style: none;
 }
@@ -6,10 +12,10 @@ mat-toolbar {
 }
 mat-toolbar-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .search {
-  background: #f0f4f7;
+  background: white;
   height: 35px;
   width: 400px;
   border-radius: 5px;
@@ -19,7 +25,7 @@ mat-toolbar-row {
   align-items: center;
 }
 input {
-  background: #efefef;
+  background: white;
   border: none;
   margin-left: 20px;
 }
@@ -34,11 +40,4 @@ input:focus {
   display: flex;
   width: 300px;
   justify-content: space-around;
-}
-.icon-box {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-color: rebeccapurple;
-  color: white;
 }

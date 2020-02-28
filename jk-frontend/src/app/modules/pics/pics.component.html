@@ -1,1 +1,15 @@
-<p>pics works!</p>
+<!-- this code can be used for list of album -->
+<cdk-virtual-scroll-viewport itemSize="10"
+  class="container">
+  <div class="photo-box">
+    <div class="photos"
+      *cdkVirtualFor="let photo of photos">
+      <img [src]="photo.thumbnailUrl"
+        alt=""
+        class="image">
+
+    </div>
+  </div>
+
+
+</cdk-virtual-scroll-viewport>
